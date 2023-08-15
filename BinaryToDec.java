@@ -14,7 +14,7 @@ public class BinaryToDec{
         break;
       }
       count++;
-      sum=sum+(d*Math.pow(2,count));
+      sum=sum+power(2,count);
       bin=bin/10;
     }
     if(count==-1)
@@ -22,5 +22,12 @@ public class BinaryToDec{
     else
       System.out.println((int)sum/2);
     sc.close();
+  }
+  public static double Power(int n, int p){
+    int temp=1;
+    for(int i=1; i<=p; i++){
+      temp=temp*n;
+    }
+    return temp;
   }
 }
