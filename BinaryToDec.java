@@ -1,7 +1,9 @@
+import java.util.Scanner;
 public class BinaryToDec{
   public static void main(String[] args){
     System.out.println("Enter a Number");
-    int bin=5;
+    Scanner sc=new Scanner(System.in);
+    int bin=sc.nextInt();
     int temp=bin;
     int count=0;
     double sum=0;
